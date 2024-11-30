@@ -1,0 +1,220 @@
+/*********
+Resources
+
+color-primary: #f55700
+
+**********/
+/**** Quick Resets *****/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/***** Default on Body ********/
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+/****** Other Default styling here *******/
+h1{
+    font-size: 40px;
+    line-height: 48px;
+}
+
+h2{
+    font-size: 32px;
+    line-height: 40px;
+}
+
+h3{
+    font-size: 32px;
+    line-height: 40px;
+}
+
+h4{
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.work h3, .about h3, .contact h3{
+    padding: 2rem 1rem;
+}
+
+
+/********* Other default styling ends here *******/
+
+/**** Style Header *****/
+
+/***** Style Nav bar ***/
+.nav-header-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    gap: .1rem;
+}
+
+nav a, .logo{
+    color: #f55700;
+    text-size-adjust: 1.3rem;
+    border-radius: .3rem;
+    padding: .6rem;
+}
+
+.logo{
+    text-decoration: underline;
+    background-color: unset;
+}
+
+nav a:hover{
+    background-color: #f55700;
+    color: white;
+}
+
+.logo:hover{
+    text-decoration: unset;
+}
+
+/**** Style Primary landing Section *******/
+.landing-container{
+    display: grid;
+    height: 80vh;
+    grid-template-columns: repeat(12, 1fr);
+    background-color: #ffe5e2;
+}
+
+.landing-container div{
+    grid-column: span 6;
+    border: 1px solid red;
+    align-self: center;
+    padding: 0 5rem;
+}
+
+.landing-container div button{
+        background-color: #f55700;
+        padding: .5rem .8rem;
+        border-radius: .5rem;
+        color: white;
+}
+
+.landing-container div button:hover{
+    background-color: #d33a2c;
+}
+
+/****** Style Work Section ********/
+.grid-work-container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 1rem;
+    gap: .9rem;
+}
+
+.grid-work-items{
+    grid-column: span 4;
+    border-radius: .4rem;
+    background-color: #fef1f0;
+}
+
+.grid-work-items:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.grid-work-items:hover{
+    background-color: #f1ebff;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    border-radius: .4rem;
+}
+
+/***** Style about here ****/
+.grid-about-container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: .9rem;
+}
+
+.grid-about-items{
+    grid-column: span 4;
+    padding: 2rem;
+    background-color: aquamarine;
+}
+
+/***** Style contact here ****/
+.grid-contact-container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: .9rem;
+}
+
+.grid-contact-items{
+    grid-column: span 6;
+    padding: 2rem;
+    background-color: rgb(11, 204, 140);
+}
+
+.footer-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: black;
+}
+
+.footer-item{
+    padding: 2rem;
+    color: white;
+}
+
+/*****mdedia queries below here*****/
+
+/****** for tablets ***********/
+@media only screen and (max-width: 720px){
+    .landing-container div{
+        grid-column: span 9;
+    }
+    
+    .grid-work-items{
+        grid-column: span 6;
+    }
+    
+    .grid-about-items{
+        grid-column: span 6;
+    }
+    
+    .grid-contact-items{
+        grid-column: span 6;
+    }
+}
+
+
+/***** for phones *****/
+@media only screen and (max-width: 400px){
+    .landing-container div{
+        grid-column: span 12;
+    }
+    
+    .grid-work-items{
+        grid-column: span 12;
+    }
+    
+    .grid-about-items{
+        grid-column: span 12;
+    }
+    
+    .grid-contact-items{
+        grid-column: span 12;
+    }
+}
+
+/****** for super big screens ****/
