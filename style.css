@@ -128,23 +128,24 @@ nav a:hover{
 }
 
 .grid-work-items{
-    grid-column: span 4;
+    grid-column: span 3;
     border-radius: .4rem;
     background-color: #fef1f0;
+    box-shadow: 1px 2px 1.5px 1.5px gray;
 }
 
 .grid-work-items:hover{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.grid-work-items:hover{
-    background-color: #f1ebff;
+    box-shadow: 2px 4px 3px 3px gray;
 }
 
 img{
     max-width: 100%;
     height: auto;
     border-radius: .4rem;
+}
+
+.work-items-des{
+    padding: .6rem;
 }
 
 /***** Style about here ****/
