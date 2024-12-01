@@ -10,6 +10,7 @@ color-primary: #f55700
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    list-style: none;
 }
 
 /***** Default on Body ********/
@@ -37,12 +38,12 @@ h3{
 }
 
 h4{
-    font-size: 24px;
+    font-size: 20px;
     line-height: 28px;
 }
 
 .work h3, .about h3, .contact h3{
-    padding: 2rem 1rem;
+    padding: 2.5rem 1rem;
 }
 
 
@@ -99,6 +100,10 @@ nav a:hover{
     padding: 0 5rem;
 }
 
+.landing-container h4{
+    font-size: 22px;
+}
+
 .landing-container div button{
         background-color: #f55700;
         padding: .5rem .8rem;
@@ -132,6 +137,7 @@ nav a:hover{
     border-radius: .4rem;
     background-color: #fef1f0;
     box-shadow: 1px 2px 1.5px 1.5px gray;
+    padding-bottom: .2rem;
 }
 
 .grid-work-items:hover{
@@ -146,6 +152,39 @@ img{
 
 .work-items-des{
     padding: .6rem;
+}
+
+.work-items-des h4{
+    padding-bottom: .3rem;
+}
+
+.work-items-tags-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .4rem;
+}
+
+.work-items-tags-container li{
+    padding: .1rem .4rem;
+    border-radius: 2rem;
+    background-color: #e6e7f0;
+    color: #59607b;
+}
+
+.work-items-des p{
+    padding: .5rem 0;
+    color: #59607b;
+}
+
+.work-items-des button{
+    padding: .2rem .5rem;
+    border-radius: .4rem;
+    background-color: #8086a6;
+    color: white;
+}
+
+.work-items-des button:hover{
+    opacity: .8;
 }
 
 /***** Style about here ****/
