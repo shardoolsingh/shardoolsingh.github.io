@@ -267,3 +267,12 @@ img{
 }
 
 /****** for super big screens ****/
+@media only screen and (min-width: 1200px){
+    .grid-work-container, .grid-about-container, .grid-contact-container{
+        max-width: 1600px;
+        margin: auto;
+    }
+    .grid-contact-container{
+        max-width: 800px;
+    }
+}
