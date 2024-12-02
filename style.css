@@ -83,7 +83,7 @@ color-primary: #f55700
   /**** Style Primary landing Section *******/
   .landing-container {
     display: grid;
-    height: 80vh;
+    min-height: 80vh;
     grid-template-columns: repeat(12, 1fr);
     background-color: #ffe5e2;
   }
@@ -207,30 +207,59 @@ color-primary: #f55700
   }
 
   
-  /***** Style contact here ****/
-  .grid-contact-container {
+ /***** Style contact here ****/
+ .grid-contact-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: .9rem;
+   max-width: 800px;
+    margin: auto;
   }
   .grid-contact-items {
     grid-column: span 6;
     padding: 2rem;
     background-color: rgb(11, 204, 140);
+    border-radius: .5rem;
   }
+
+.con-item-1{
+  background-color: #ffe5e2;
+}
+
+.con-item-2{
+  color: white;
+}
+
+  .con-icon-wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .con-connect-icon-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .grid-contact-items h4{
+    padding-bottom: .6rem;
+  }
+  
   .svg-icons {
     height: 24px;
     width: 24px;
   }
+
+/********* footer starts here ************/
   .footer-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: black;
+    background-color: white;
   }
   .footer-item {
     padding: 2rem;
-    color: white;
+    color: #59607b;
+    font-size: 14px;
   }
   
   /****** Components here ****/
@@ -291,13 +320,9 @@ color-primary: #f55700
   /****** for super big screens ****/
   @media only screen and (min-width: 1200px) {
     .grid-work-container,
-    .grid-about-container,
-    .grid-contact-container {
+    .grid-about-container{
       max-width: 1600px;
       margin: auto;
-    }
-    .grid-contact-container {
-      max-width: 800px;
     }
   }
   
