@@ -284,7 +284,7 @@ color-primary: #f55700
   
   /****** Components here ****/
   .btn {
-    padding: .5rem .8rem;
+    padding: .8rem 1.5rem;
     border-radius: .5rem;
     font-weight: bold;
     border: none;

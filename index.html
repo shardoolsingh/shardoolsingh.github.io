@@ -14,10 +14,9 @@
         </div>
 
         <nav class="nav-container">
-            <a href="#">Home</a>
             <a href="#">Work</a>
             <a href="#">About</a>
-            <a href="#">Contact</a>
+            <a href="#contact-form">Contact</a>
         </nav>
     </header>
 
@@ -29,7 +28,7 @@
             <h4>I make <span class="brand-text">apps</span> and <span class="brand-text">websites</span>.</h4>
             <p>Do you need minimal, clutter-free modern solutions to provide the best possible user experience and take your business to the next level?</p>
             <br>
-            <button class="btn cta-primary">Get in touch</button>
+            <a href="#contact-form"><button class="btn cta-primary">Get in touch</button></a>
         </div>
     </section>
 
@@ -108,7 +107,7 @@
                     <h4>About me</h4>
                     <p>Lorem ipsum dolor, sit amet fugiat, architecto deleniti. Vel ex suscipit reiciendis! ipsum dolor, sit amet fugiat, architecto deleniti. Vel ex suscipit reicien.</p>
                     <br>
-                    <button class="btn cta-primary cta-about">Hire me</button>
+                    <a href="#contact-form"><button class="btn cta-primary cta-about">Hire me</button></a>
                 </div>
             </div>
             <div class="grid-about-items about-items-edu">
@@ -183,7 +182,7 @@
             </div>
             <div class="grid-contact-items con-item-2">
                 <h4>Contact</h4>
-                <form name="contact-form" action="https://api.web3forms.com/submit" method="post">
+                <form id="contact-form" name="contact-form" action="https://api.web3forms.com/submit" method="post">
                     <!-- api contact key below -->
                     <input type="hidden" name="access_key" value="0bf9e75b-5900-48c7-9c96-1c97ea2e54ae">
                     <label for="name">Name</label><br>
