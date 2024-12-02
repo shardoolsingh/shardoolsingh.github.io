@@ -52,15 +52,21 @@ color-primary: #f55700
   /***** Style Nav bar ***/
   .nav-header-container {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(12, 1fr);
     align-items: center;
   }
   .nav-container {
     display: flex;
     justify-content: end;
+    grid-column: span 10;
     flex-wrap: wrap;
     gap: .1rem;
   }
+
+.nav-left{
+  grid-column: span 2;
+}
+
   nav a,
   .logo {
     color: #f55700;
@@ -217,7 +223,6 @@ color-primary: #f55700
   .grid-contact-items {
     grid-column: span 6;
     padding: 2rem;
-    background-color: rgb(11, 204, 140);
     border-radius: .5rem;
   }
 
@@ -227,6 +232,7 @@ color-primary: #f55700
 
 .con-item-2{
   color: white;
+  background-color: rgb(11, 204, 140);
 }
 
   .con-icon-wrapper{
@@ -249,6 +255,20 @@ color-primary: #f55700
     width: 24px;
   }
 
+  /********* style contact form *********/
+ form #name, form #email, form #message{
+    background-color: white;
+    border-radius: .5rem;
+    padding: .5rem;
+    width: 100%;
+    margin: .5rem 0;
+    border: 1px solid #8086a6;
+  }
+
+  #name:hover, #email:hover, #message:hover{
+    box-shadow: 1px 1px 1px 1px gray;
+  }
+
 /********* footer starts here ************/
   .footer-container {
     display: flex;
@@ -267,6 +287,7 @@ color-primary: #f55700
     padding: .5rem .8rem;
     border-radius: .5rem;
     font-weight: bold;
+    border: none;
   }
   
   .cta-primary{
@@ -274,8 +295,8 @@ color-primary: #f55700
     color: white;
   }
 
-  .btn:hover{
-    opacity: .7;
+  .cta-primary:hover{
+    background-color: #d33a2c;
   }
   /*****mdedia queries below here*****/
   
@@ -296,7 +317,7 @@ color-primary: #f55700
   }
   
   /***** for phones *****/
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 460px) {
     .landing-container div {
       grid-column: span 12;
     }
