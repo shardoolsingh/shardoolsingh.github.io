@@ -183,14 +183,16 @@
             </div>
             <div class="grid-contact-items con-item-2">
                 <h4>Contact</h4>
-                <form action="#" method="post">
+                <form name="contact-form" action="https://api.web3forms.com/submit" method="post">
+                    <!-- api contact key below -->
+                    <input type="hidden" name="access_key" value="0bf9e75b-5900-48c7-9c96-1c97ea2e54ae">
                     <label for="name">Name</label><br>
                     <input type="text" name="name" id="name" placeholder="Your Name"><br>
                     <label for="email">Email</label><br>
                     <input type="email" name="email" id="email" placeholder="Your email"><br>
                     <label for="message">Message</label><br>
                     <textarea name="message" id="message" rows="5" placeholder="Your message"></textarea><br>
-                    <input type="submit" value="Send Message" class="btn cta-primary">
+                    <input type="submit" value="Send Message" class="btn cta-primary" onclick="submitForm()">
                 </form>
             </div>
         </div>
@@ -201,5 +203,7 @@
             <p>Copyright 2024. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- Script below here -->
 </body>
 </html>
