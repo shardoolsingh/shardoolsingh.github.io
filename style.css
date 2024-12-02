@@ -170,20 +170,42 @@ color-primary: #f55700
     grid-template-columns: repeat(12, 1fr);
     gap: .9rem;
     background-color: #f5f7fb;
+    padding: 2rem 1rem;
   }
+
   .grid-about-items {
     grid-column: span 4;
-    padding: 2rem;
   }
+
+  .about-items-edu{
+    grid-column: span 5;
+  }
+  
+  .about-items-skills{
+    grid-column: span 3;
+  }
+
+  .grid-about-items h4{
+    padding-bottom: .6rem;
+  }
+  
   .about-items-content-wrapper {
     border-right: 2px solid #e6e7f0;
     padding-right: 2rem;
   }
+
   .about-items-about p,
   .about-items-edu p,
   .about-items-skills li {
     color: #59607b;
   }
+
+  .edu-degree{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
   
   /***** Style contact here ****/
   .grid-contact-container {
@@ -218,6 +240,14 @@ color-primary: #f55700
     font-weight: bold;
   }
   
+  .cta-primary{
+    background-color: #f55700;
+    color: white;
+  }
+
+  .btn:hover{
+    opacity: .7;
+  }
   /*****mdedia queries below here*****/
   
   /****** for tablets ***********/
