@@ -157,11 +157,11 @@
     padding: .5rem 0;
     color: #59607b;
   }
-  .work-items-des button {
+  .cta-secondary {
     background-color: #8086a6;
     color: white;
   }
-  .work-items-des button:hover {
+  .cta-secondary:hover {
     opacity: .8;
   }
   
@@ -315,6 +315,7 @@
     border-radius: .5rem;
     font-weight: bold;
     border: none;
+    cursor: pointer;
   }
   
   .cta-primary{
